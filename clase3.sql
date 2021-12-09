@@ -211,7 +211,7 @@ WHERE usuario.id=5;
 --por el usuario con email usuario06@hotmail.com. 
 SELECT usuario.email, comentario.*
 FROM comentario INNER JOIN usuario ON usuario.id=comentario.usuario_id
-WHERE  usuario.email != 'usuario06@gmail.com';
+WHERE  usuario.email != 'usuario06@hotmail.com';
 
 --Listar los usuarios que no han publicado ningún post. 
 SELECT * FROM usuario LEFT JOIN post ON usuario.id=post.usuario_id WHERE post.usuario_id IS NULL;
