@@ -203,7 +203,7 @@ VALUES
 
 
 -- Seleccionar el correo, id y título de todos los post publicados por el usuario 5.
-SELECT id, titulo, email
+SELECT post.id, titulo, email
 FROM post INNER JOIN usuario ON usuario.id=post.usuario_id 
 WHERE usuario.id=5;
 
